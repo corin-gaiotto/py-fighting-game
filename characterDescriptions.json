@@ -1,0 +1,161 @@
+{
+    "bennett":{
+        "name":"John Shoto",
+        "title":"Almighty All-Rounder",
+        "moves":[
+            "236L: Fire Shot",
+            "623L/H: Rising Strike (air ok)",
+            "214H: Explosion (air ok)",
+            "214L: Dash Strike",
+            "236236L: Super Fire Shot (50% meter)",
+            "632146H: Danger Time (50% meter, air ok)"
+        ]
+    },
+    "venti":{
+        "name":"Breeze",
+        "title":"Floaty Zoner",
+        "moves":[
+            "236L/H: Arrow (air ok)",
+            "623L/H: Updraft (air ok)",
+            "214H: Explosion (air ok)",
+            "214L: Float (air only)",
+            "236236H: Vortex (50% meter)",
+            "632146L: Triple Install (50% meter)"
+        ]
+    },
+    "xiao":{
+        "name":"Ninja",
+        "title":"Rekka Pixie",
+        "moves":[
+            "236L/H/D (up to 3): Dash",
+            "623L: Spear Flip",
+            "214H: Finisher (air only)",
+            "214L/H: Run",
+            "214214H: Mortal Dive (50% meter, air only)",
+            "632146L: Teleport Install (50% meter)"
+        ]
+    },
+    "zhongli":{
+        "name":"Rockfall",
+        "title":"Zoner with Nine Rock",
+        "moves":[
+            "22L/H/D: Pierce",
+            "236L/H/D: Pillar",
+            "214L/H/(25%)D: Shield (D air ok)",
+            "41236L/H/D: Teleport (25% meter)",
+            "236236L: Meteor (50% meter)",
+            "632146H: Pillar Rain (50% meter)"
+        ]
+    },
+    "ayaka":{
+        "name":"Vergil Devil May Cry",
+        "title":"Vergil Devil May Cry",
+        "moves":[
+            "236L: Rapid Slashes (air ok)",
+            "41236H: Power Slash",
+            "236H: Dash Through",
+            "214L: Spinning Jump (air ok)",
+            "236236H: Judgement Cut (50% meter)",
+            "632146L: Sword Summon (50% meter)"
+        ]
+    },
+    "raiden":{
+        "name":"???",
+        "title":"Cross-upper",
+        "moves":[
+            "66 / 44: Stepdash",
+            "214H: Upwards Slash",
+            "236L/H: Mid Dispenser",
+            "214L: Surprise Attack (air ok)",
+            "632146H: Ultra Slash (50% meter)",
+            "632146L: Dash Install (50% meter)"
+        ]
+    },
+    "dehya":{
+        "name":"Grappler",
+        "title":"STRIKE OR THROW: CALL IT",
+        "moves":[
+            "623L: Chokeslam",
+            "236H: Elbow Strike",
+            "214H: Power Dunk (air ok)",
+            "236L: Slam Dunk (air only)",
+            "236236L: Flame Pillar (50% meter)",
+            "632146H: Attack Rush (50% meter)"
+        ]
+    },
+    "kaveh":{
+        "name":"Trapper",
+        "title":"Trap-laying Strategist",
+        "moves":[
+            "236L/H/D: Trap Summon (air ok)",
+            "22L: Trap Spin (air ok)",
+            "22H: Trap Slash (air ok)",
+            "22D: Auto Trap (air ok)",
+            "214H: Heavy Slash",
+            "236236L: Emerald Blast (50% meter)",
+            "632146H: Trap: Full Auto (50% meter)"
+        ]
+    },
+    "navia":{
+        "name":"Millia With A Gun",
+        "title":"The Downplayers Won",
+        "moves":[
+            "22L/H: Pistol",
+            "236L: Disc",
+            "236H: Shotgun (air ok)",
+            "214L/H: Grenade (air ok)",
+            "236236H: Cannon Fire (50% meter)",
+            "632146L: Knockdown Install (50% meter, air ok)"
+        ]
+    },
+    "wriothesley":{
+        "name":"Boxer",
+        "title":"Punishing Pugilist",
+        "moves":[
+            "H H H: Triple Punch",
+            "(during Triple Punch 1/2) 44: Backstep",
+            "214L: Pilebunker",
+            "236H: Pummel",
+            "236L: Tackle",
+            ">   L: Slam",
+            ">   H: Uppercut",
+            "623L: Rising Knuckle",
+            "214H: Power Dunk (air ok)",
+            "236236H: Corkscrew Punch (50% meter)",
+            "236236L: Corner Carrier (50% meter)"
+        ]
+    },
+    "childe":{
+        "name":"The Cooler John Shoto",
+        "title":"Not Even His Final Form",
+        "moves":[
+            "22L/H: Charge/Soul Charge",
+            "236L: Arrow, (charge 2) Double",
+            "214L: Flip Kick, (charge 3) Extra",
+            "623H: Leap (air ok),(charge 5)D:Cancel",
+            "236H (charge 5): Teleport",
+            "214H: Double Slash",
+            ">   4H (charge 4) : Low",
+            ">   6H            : Overhead",
+            "236236H: Great Yamada Attack (50% meter)",
+            "632146L: Max Charge (50% meter)",
+            ">    632146L(charge 5): Instant Kill (50% meter)"
+        ]
+    },
+    "marionette":{
+        "name":"Puppeteer",
+        "title":"If Eddie was Potemkin",
+        "moves":[
+            "22L: Recall",
+            "22H: Stomp",
+            "214L/H: Puppet String",
+            "236H: Mortal Strike",
+            "236236L: Puppet Show (50% meter, air ok)",
+            "*Puppet attacks, ] [ denotes button release*",
+            "    ]L[: Missile",
+            "    ]H[: Spinning Arms",
+            "    ]D[: Hold Fast",
+            "    632146H or ]H[: Explode (50% meter)"
+        ]
+    }
+}

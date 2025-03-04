@@ -1,0 +1,399 @@
+{
+    "#comment 0":"All top-level keys starting with # are ignored: use for commenting",
+    "#comment 1":"Pressing the reset button while in a combo trial with current P down held will change sides (default current P left)",
+    "#comment 2":"Pressing swap button will swap who is doing combo trials (P1 or P2)",
+    "#sampleUsage":[
+        {
+            "#comment 0":"Structure of an individual combo trial",
+            "name":"The name of the trial goes here. It is displayed at the bottom middle",
+            "description":"Short description of the trial (currently unused)",
+            "startingPosition":"one of [cornering, middle, cornered].",
+            "moves":[
+                "# list of move objects",
+                {
+                    "name":"name is the name of the move.",
+                    "hitType":"hitType is one of [hit, block, miss]. Implicitly folds hit_inescapable in with hit.",
+                    "hitCount":"defaults to 1, number of consecutive hits of a move",
+                    "continueAfterKnockdown":"Default false. If true, extends combo trial counter for 1 frame post-getup for the current move to possibly connect.",
+                    "enemyInputs":"Optional. If true, holds the given input state with the enemy while the combo is on this step. Defaults to standing idly. Useful for blockstrings, bursts, and jumping"
+                }
+            ]
+        }
+    ],
+    "ayaka":[],
+    "bennett":[
+        {
+            "name":"Beginner 1",
+            "description":"5L starter into knockdown + meaty 214H",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"2D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Explosion",
+                    "hitType":"block",
+                    "continueAfterKnockdown":true,
+                    "enemyInputs":[1, []]
+                }
+            ]
+        },
+        {
+            "name":"Beginner 2",
+            "description":"Gatling into super",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Super Fire Shot",
+                    "hitType":"miss"
+                }
+            ]
+        },
+        {
+            "name":"Beginner 3",
+            "description":"Simple corner jump-in into Danger Time knockdown",
+            "startingPosition":"cornering",
+            "moves":[
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"2D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Danger Time",
+                    "hitType":"miss"
+                }
+            ]
+        },
+        {
+            "name":"Intermediate 1",
+            "description":"Air combo using JD's stun property",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"5D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JL",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Rising Strike 2",
+                    "hitType":"hit"
+                }
+            ]
+        },
+        {
+            "name":"Intermediate 2",
+            "description":"Throw Combo",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"6D Followup",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Roman Cancel",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JL",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Rising Strike 2",
+                    "hitType":"hit",
+                    "hitCount":3
+                }
+            ]
+        },
+        {
+            "name":"Intermediate 3",
+            "description":"Meterless Throw Combo",
+            "startingPosition":"cornering",
+            "moves":[
+                {
+                    "name":"6D Followup",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Rising Strike 2",
+                    "hitType":"hit",
+                    "hitCount":3
+                },
+                {
+                    "name":"Explosion",
+                    "hitType":"block",
+                    "continueAfterKnockdown":true,
+                    "enemyInputs":[1, []]
+                }
+            ]
+        },
+        {
+            "name":"Intermediate 4",
+            "description":"Double super",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Super Fire Shot",
+                    "hitType":"miss"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Super Fire Shot",
+                    "hitType":"miss"
+                },
+                {
+                    "name":"2D",
+                    "hitType":"hit"
+                }
+            ]
+        },
+        {
+            "name":"Advanced 1",
+            "description":"Midscreen Explosion pickup w/super",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"Explosion",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Super Fire Shot",
+                    "hitType":"miss"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit"
+                }
+            ]
+        },
+        {
+            "name":"Advanced 2",
+            "startingPosition":"middle",
+            "description":"Post-2H Danger Time link into 5L",
+            "moves":[
+                {
+                    "name":"2H",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Danger Time",
+                    "hitType":"miss"
+                },
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Rising Strike 2",
+                    "hitType":"hit",
+                    "hitCount":3
+                }
+            ]
+        },
+        {
+            "name":"Advanced 3",
+            "description":"Situational combo off of Air Explosion",
+            "startingPosition":"cornering",
+            "moves":[
+                {
+                    "name":"Air Explosion",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JH",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"JD",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Rising Strike 2",
+                    "hitType":"hit"
+                }
+            ]
+        }
+    ],
+    "childe":[],
+    "dehya":[
+        {
+            "name":"Beginner 1",
+            "description":"Command Grab + Meaty JH",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"Chokeslam Followup",
+                    "hitType":"hit",
+                    "hitCount":5
+                },
+                {
+                    "name":"JH",
+                    "hitType":"block",
+                    "continueAfterKnockdown":true,
+                    "enemyInputs":[4,[]]
+                }
+            ]
+        },
+        {
+            "name":"Advanced 1",
+            "description":"Loop Example (breaks in corner)",
+            "startingPosition":"middle",
+            "moves":[
+                {
+                    "name":"2H",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Slam Dunk Followup",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"JL",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5L",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5H",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"Elbow Strike",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"5D",
+                    "hitType":"hit"
+                },
+                {
+                    "name":"Slam Dunk Followup",
+                    "hitType":"hit",
+                    "hitCount":2
+                },
+                {
+                    "name":"JL",
+                    "hitType":"hit"
+                }
+            ]
+        }
+    ],
+    "kaveh":[],
+    "marionette":[],
+    "navia":[],
+    "raiden":[],
+    "venti":[],
+    "wriothesley":[],
+    "xiao":[],
+    "zhongli":[]
+}
